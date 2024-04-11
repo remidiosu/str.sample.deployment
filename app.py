@@ -85,7 +85,7 @@ if state and outcome:
 
 st.markdown("<br><br><h4 style='text-align: left; color: darkblue;'>My Map</h4>", unsafe_allow_html=True)
 
-data = gpd.read_file("https://github.com/open-data-kazakhstan/geo-boundaries-kz/blob/master/datapackage.geojson")
+data = gpd.read_file("https://raw.githubusercontent.com/holtzy/The-Python-Graph-Gallery/master/static/data/france.geojson")
 geoplot.polyplot(data, projection=gcrs.AlbersEqualArea(), edgecolor='darkgrey', facecolor='lightgrey', linewidth=.3,figsize=(12, 8))
 
 st.pyplot(plt.gcf())
